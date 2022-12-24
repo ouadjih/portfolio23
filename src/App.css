@@ -1,0 +1,12 @@
+@import "~fontsource-fira-code/index.css";
+.App {
+  text-align: center;
+  font-family: "Fira Code";
+  font-weight: bold;
+  --second: #0F0E0E;
+  --first:  #AEC237;
+  background-color: var(--second);
+  color: var(--first);
+  height: 100vh;
+  font-weight: 70vw;
+}
