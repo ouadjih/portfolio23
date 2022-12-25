@@ -1,0 +1,10 @@
+import React from "react";
+import './Hero.css'
+export const Hero = () => {
+  return (
+    <div className="hero">
+      <h1>Hello, my name is Ouadjih.</h1>
+      <p class="subtitle">Welcome to my website!</p>
+    </div>
+  );
+};

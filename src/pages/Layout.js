@@ -1,7 +1,12 @@
 import React from 'react'
+import { Navbar } from '../components/Navbar';
 
-export const Layout = () => {
+
+
+const Layout = () => {
   return (
-    <div>Layout</div>
+   <Navbar/>
   )
 }
+
+export default Layout;
