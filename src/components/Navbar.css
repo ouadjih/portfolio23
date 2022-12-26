@@ -20,19 +20,20 @@
 }
 .navbar-list-item {
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .navbar-logo{
     width: 54px;
     height: 54px;
     object-fit:contain;
-    border-radius: 50%;
-    border: solid 1px var(--first);
+    border-radius: 30%;
+    border: solid 6px var(--first);
 }
 
 @media only screen and (max-width: 700px) {
     .navbar{
-        width: 80vw;
+        width: 90vw;
         height: 80px;
     }
 }

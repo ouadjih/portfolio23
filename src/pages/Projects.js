@@ -1,10 +1,11 @@
 import React from 'react'
+import { Grid } from '../components/Grid'
 
 export const Projects = () => {
   return (
-    <div className='project'>
-      project
-    </div>
+   
+     <Grid/> 
+    
   )
 }
 

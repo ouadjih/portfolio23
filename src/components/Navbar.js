@@ -7,16 +7,16 @@ export const Navbar = () => {
 
   return (
     <nav className='navbar'>
-    <img class="navbar-logo"src={logo} alt="logo"/>
+     <Link to="/"><img class="navbar-logo"src={logo} alt="logo"/></Link>
     <ul className="navbar-list">
-      <li className="navbar-list-item hvr-buzz">
-        <Link to="/">Home</Link>
-      </li>
       <li className="navbar-list-item hvr-buzz">
         <Link to="/Projects">Projects</Link>
       </li>
       <li className="navbar-list-item hvr-buzz">
         <Link to="/Contact">Contact</Link>
+      </li>
+      <li className="navbar-list-item hvr-buzz">
+        <Link to="/Learn">Learn with me</Link>
       </li>
     </ul>
   </nav>

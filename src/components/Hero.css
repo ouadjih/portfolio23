@@ -47,6 +47,9 @@ h1 {
     transform: translateY(3rem);
     animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
   }
+
+
+
   
   @keyframes typewriter {
     to {
@@ -67,7 +70,7 @@ h1 {
     }
   }
   
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 590px) {
     h1 {
         font-size: clamp(1rem, 1vw + 1rem, 4rem);
       }
@@ -75,3 +78,42 @@ h1 {
         font-size: 1rem;}
  }
  
+
+
+.button-74 {
+  margin-top: 15vh;
+  background-color: #fff;
+  border: 2px solid var(--first);
+  border-radius: 1em;
+  box-shadow: var(--first) 4px 4px 0 0;
+  color: var(--second);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: var(--second);
+  color: var(--first);
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+  animation-duration: 3s;
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
