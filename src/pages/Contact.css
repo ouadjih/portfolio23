@@ -1,0 +1,17 @@
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    width: 70vw;
+    gap: 4em;
+}
+
+@media screen and (width < 800px) {
+    .contact {
+      margin-top: 1em;
+      width: 90vw;
+       flex-direction: column;
+       gap: 1em;
+    }
+}

@@ -1,0 +1,34 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 18rem;
+    height: 70vh;
+}
+label{
+    position: relative;
+    bottom:  -10px;
+}
+input ,textarea{
+    background: none;
+    color: aliceblue;
+    border: 1px solid  var(--first);
+    padding: 1em;
+}
+.submit{
+    background-color: var(--second);
+    color: var(--first);
+    border: solid 2px var(--first);
+    padding: 1em;
+    border-radius: 1.3em;
+    cursor: pointer;
+    font-size: 14px;
+    
+}
+.submit:hover{
+    background-color: var(--first);
+    color: var(--second);
+    font-weight: 900;
+    font-size: 14px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}

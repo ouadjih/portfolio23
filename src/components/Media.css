@@ -1,0 +1,35 @@
+.media{
+    width: 20rem;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap:1em;   
+}
+.media-text{
+    font-weight: 200;
+    width: 35ch;
+    line-height: 2em;
+}
+.medias-contact{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: .5em 0;
+    
+}
+
+.mediael{
+ width: 35px;
+ height: 35px;
+ cursor: pointer;
+ opacity:.5;
+}
+.mediael:hover{
+        opacity:1;
+}
