@@ -60,6 +60,7 @@
 }
 .cardimg:hover .showsite {
   opacity: 1;
+  content: 'visite';
 }
 .card-info {
   width: 240px;

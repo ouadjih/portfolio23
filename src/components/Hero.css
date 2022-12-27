@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: 80vh;
 }
 h1 {
     font-size: clamp(1rem, 3vw + 1rem, 4rem);
@@ -71,6 +71,10 @@ h1 {
   }
   
   @media only screen and (max-width: 590px) {
+    .hero{
+      --typewriterSpeed: 3s;
+      height: 80vh;
+    }
     h1 {
         font-size: clamp(1rem, 1vw + 1rem, 4rem);
       }
