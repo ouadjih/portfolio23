@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Grid.css";
-import Projects from "./data";
+import Projects from "../Assets/data";
 import Loader from "./Loader";
 
 export const Grid = () => {

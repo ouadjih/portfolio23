@@ -1,11 +1,11 @@
-import p1 from './p1.png'
-import p2 from './p2.png'
-import p3 from './p3.png'
-import p4 from './p4.png'
-import p5 from './p5.png'
-import p6 from './p6.png'
-import p7 from './p7.png'
-import p6j from './p6.jpg'
+import p1 from './Images/p1.png'
+import p2 from './Images/p2.png'
+import p3 from './Images/p3.png'
+import p4 from './Images/p4.png'
+import p5 from './Images/p5.png'
+import p6 from './Images/p6.png'
+import p7 from './Images/p7.png'
+import p6j from './Images/p6.jpg'
 const Projects = [
     {
       id: 1,
