@@ -75,8 +75,11 @@
   .grid {
     margin-top: 2em;
     width: 90vw;
+    height: auto;
+    
   }
   .cardgrid {
+    overflow-y: scroll;
     padding: 0.5em;
   }
   .card {
@@ -88,7 +91,7 @@
     height: 190px;
     width: 300px;
     object-fit: cover;
-    position: absolute;
+
   }
   .card-info {
     width: 200px;
