@@ -1,0 +1,37 @@
+.loader{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0em;
+    align-items: center;
+    justify-content: center;
+
+}
+
+svg{
+    width:7.250em;
+    height:4.125em;
+}
+.led{
+  fill:none;
+  stroke:var(--first);
+  opacity:0;
+}
+.one{
+  animation:blip 1s ease-in-out 0s infinite alternate;
+}
+.two{
+  animation:blip 1s ease-in-out .1s infinite alternate;
+}
+.three{
+  animation:blip 1s ease-in-out .2s infinite alternate;
+}
+.four{
+  animation:blip 1s ease-in-out .3s infinite alternate;
+}
+@keyframes blip {
+  0%{stroke-width:0;opacity:0;}
+  50%{stroke-width:5;opacity:1;}
+  100%{stroke-width:0;opacity:0;}
+}
+

@@ -1,60 +1,72 @@
 *:focus {
-    outline: none;
+  outline: none;
 }
 .grid {
-    margin-top: 1em;
-   width: 70vw;
-   height: 80vh;
-   border: solid 1px var(--first);
-   display: flex;
-   flex-direction: column;
-   gap: 10px;
-   
- 
-  }
-  .search {
-    text-align: center;
-    color: var(--first);
-    opacity: 100%;
-    background-color: transparent;
-    border: none;
-    padding: 1em;
-    cursor: pointer;
-    margin-top: .5em;
-  }
-  
- 
-  .cardgrid{
-    height: 70vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    overflow-y: scroll;
-    padding: 3em;
-  }
-  .cardgrid > * {
-    
-    margin: 5px;
-   
-  }
+  margin-top: 1em;
+  width: 70vw;
+  height: 77vh;
+  border: solid 2px var(--first);
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.search {
+  text-align: center;
+  color: var(--first);
+  opacity: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+  margin-top: 0.5em;
+}
 
-  .card {
-   cursor: pointer;
-   height: 200px;
-   width: 250px;
-   
+.cardgrid {
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  overflow-y: scroll;
+  padding: 3em;
+}
+.cardgrid > * {
+  margin: 5px;
+}
+
+.card {
+  cursor: pointer;
+  height: 200px;
+  width: 250px;
+}
+.card-img {
+  height: 160px;
+  width: 240px;
+  object-fit: cover;
+}
+.card-info {
+  width: 240px;
+}
+@media screen and (width < 800px) {
+  .grid {
+    margin-top: 2em;
+    width: 90vw;
   }
-.card-img{
-    height: 120px;
-    width: 240px;
+  .cardgrid {
+    padding: 0.5em;
+  }
+  .card {
+    cursor: pointer;
+    height: 250px;
+    width: 300px;
+  }
+  .card-img {
+    height: 190px;
+    width: 300px;
     object-fit: cover;
-}
-.card-info{
+  }
+  .card-info {
     width: 200px;
-}
-@media screen and (width < 800px){
-    .cardgrid{
-        padding: 0em;
-    }
+  }
 }

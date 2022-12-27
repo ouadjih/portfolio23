@@ -10,21 +10,21 @@ const Projects = [
     {
         id: 2,
         src: p1,
-        title: 'room-design-landing-page',
+        title: 'b',
         link:'room-design-landing-page.vercel.app',
         description:'this is a challenge from frontend mentor to make website from design i used react library for this website '
       },
       {
         id: 3,
         src: p1,
-        title: 'room-design-landing-page',
+        title: 'c',
         link:'room-design-landing-page.vercel.app',
         description:'this is a challenge from frontend mentor to make website from design i used react library for this website '
       },
       {
         id: 4,
         src: p1,
-        title: 'room-design-landing-page',
+        title: 'd',
         link:'room-design-landing-page.vercel.app',
         description:'this is a challenge from frontend mentor to make website from design i used react library for this website '
       },
