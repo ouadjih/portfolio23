@@ -13,7 +13,7 @@
 }
 .search {
   text-align: center;
-  color: var(--first);
+  color: #fff;
   opacity: 100%;
   background-color: transparent;
   border: none;
@@ -25,11 +25,13 @@
 .cardgrid {
   height: 70vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
   overflow-y: scroll;
-  padding: 3em;
+  padding: 1em 2em;
 }
 .cardgrid > * {
   margin: 5px;
@@ -40,13 +42,34 @@
   height: 200px;
   width: 250px;
 }
-.card-img {
+.cardimg {
   height: 160px;
-  width: 240px;
+  width: 100%;
   object-fit: cover;
+}
+
+.cardimg:hover {
+  opacity: .3;
+}
+.showsite{
+  position: relative ;
+  left: 6em;
+  top: -6em;
+  opacity: 0;
+ 
+}
+.cardimg:hover .showsite {
+  opacity: 1;
 }
 .card-info {
   width: 240px;
+}
+@media screen and (width < 1111px) {
+  .cardimg {
+   
+    width: 240px;
+    object-fit: cover;
+  }
 }
 @media screen and (width < 800px) {
   .grid {
@@ -61,10 +84,11 @@
     height: 250px;
     width: 300px;
   }
-  .card-img {
+  .cardimg {
     height: 190px;
     width: 300px;
     object-fit: cover;
+    position: absolute;
   }
   .card-info {
     width: 200px;
