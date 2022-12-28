@@ -16,9 +16,9 @@ export const Media = () => {
       
       <div className='medias-contact'>
         <img src={email} alt="ouadjihboudraa@yahoo.com" className='mediael'/>
-        <img src={github} alt="github/ouadjih" className='mediael' />
-        <img src={fb} alt="fb/ouadjih"  className='mediael'/>
-        <img src={linkedin} alt="linked/ouadjih" className='mediael'/>
+        <a href="www.github.com/ouadjih"> <img src={github} alt="github/ouadjih" className='mediael' /></a>
+        <a href="www.fb.com/ouadjih"> <img src={fb} alt="fb/ouadjih"  className='mediael'/></a>
+        <a href="www.linkedin.com/ouadjih"> <img src={linkedin} alt="linked/ouadjih" className='mediael'/></a>
       </div>
     </div>
   )

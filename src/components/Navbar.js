@@ -15,6 +15,7 @@ export const Navbar = () => {
       dynamicWidth: window.innerWidth,
     });
   };
+
   useEffect(() => {
     window.addEventListener("resize", setScreenWidth);
 
@@ -54,16 +55,16 @@ export const Navbar = () => {
          />
          <div className="list-phone">
           <li className="navbar-list-item-phone">
-            <Link className="Itemph" to="/Projects">
+            <Link onClick={()=>setClose(false)} className="Itemph" to="/Projects">
               Projects
             </Link>
           </li>
           <li className="navbar-list-item-phone">
-            <Link className="Itemph" to="/Contact">
+            <Link onClick={()=>setClose(false)} className="Itemph" to="/Contact">
               Contact
             </Link>
           </li>
-          <li className="navbar-list-item-phone">
+          <li onClick={()=>setClose(false)} className="navbar-list-item-phone">
             <Link className="Itemph" to="/Learn">
               Learn with me
             </Link>

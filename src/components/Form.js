@@ -2,7 +2,7 @@ import React from 'react'
 import './Form.css'
 export const Form = () => {
   return (
-    <div className='form'>
+    <form className='form'>
         <label>Full Name*</label>
         <input className='name' name='name' type="text" placeholder='Full name'/>
         <label>Email*</label>
@@ -10,6 +10,6 @@ export const Form = () => {
         <label>Message*</label>
         <textarea className='message' name='message' rows="4" cols="50"></textarea>
         <button className='submit'>Submit</button>
-    </div>
+    </form>
   )
 }
