@@ -12,10 +12,10 @@ export const Form = () => {
   const onSubmit = (e) => {
    e.preventDefault()
     send(
-      'service_5pu05q8',
+      'service_2trrgk2',
       'template_4ifqtjc',
       toSend,
-      'User ID'
+      'erfIUp1PB6F2QR8Uz'
     )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
