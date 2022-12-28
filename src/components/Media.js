@@ -11,7 +11,7 @@ export const Media = () => {
       <h2 className='Media-title'>
         Get in Touch :
       </h2>
-      <p className='media-text'>You can contact me using this form and submit or by using one of the medias below :</p>
+      <p className='media-text'>You can contact me using and submitting this form or using one of the mediums below:</p>
       </div>
       
       <div className='medias-contact'>
