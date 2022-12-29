@@ -23,8 +23,8 @@
 }
 
 .navbar-logo{
-    width: 54px;
-    height: 54px;
+    width: 40px;
+    height: 40px;
     object-fit:contain;
     border-radius: 30%;
     border: solid 6px var(--first);
@@ -78,6 +78,11 @@ z-index: 99;
     .navbar{
         width: 90vw;
         height: 80px;
+    }
+    .navbar-logo{
+      position: absolute;
+      top: 1em;
+      left: 1em;
     }
 }
 @media only screen and (max-width: 500px) {
