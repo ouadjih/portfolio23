@@ -1,14 +1,18 @@
 import React,{useState} from 'react'
 import { send } from 'emailjs-com'
 import './Form.css'
+import { Navigate, useNavigate } from 'react-router-dom';
+
 
 export const Form = () => {
+  const navigate = useNavigate()
   const [toSend, setToSend] = useState({
     from_name: '',
     to_name: 'ouadjih',
     reply_to: '',
     message: '',
   });
+ 
   const onSubmit = (e) => {
    e.preventDefault()
     send(
@@ -19,15 +23,19 @@ export const Form = () => {
     )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
+        navigate('/Succes')
+        
       })
       .catch((err) => {
-        console.log('FAILED...', err);
+        console.log('FAILED...', err)
       });
+      
   };
 
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
+
   return (
     <form className='form' onSubmit={onSubmit}>
         <label>Full Name*</label>
