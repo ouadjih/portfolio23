@@ -45,10 +45,10 @@
   height: 160px;
   width: 100%;
   object-fit: cover;
+  
 }
-
 .cardimg:hover {
-  opacity: .3;
+  opacity: 0.3;
 }
 .showsite{
   position: relative ;
@@ -57,18 +57,13 @@
   opacity: 0;
  
 }
-.cardimg:hover .showsite {
-  opacity: 1;
-  content: 'visite';
-}
+
 .card-info {
   width: 240px;
 }
-@media screen and (width < 1111px) {
-  .cardimg {
-   
-    width: 240px;
-    object-fit: cover;
+@media screen and (width < 1235px) {
+  .grid {
+    width: 80vw
   }
 }
 @media screen and (width < 800px) {
