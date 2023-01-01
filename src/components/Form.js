@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { send } from 'emailjs-com'
 import './Form.css'
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 export const Form = () => {

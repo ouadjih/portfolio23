@@ -86,11 +86,11 @@ h1 {
 
 .button-74 {
   margin-top: 15vh;
-  background-color: #fff;
+  background-color: var(--second);
   border: 2px solid var(--first);
   border-radius: 1em;
   box-shadow: var(--first) 4px 4px 0 0;
-  color: var(--second);
+  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
@@ -102,6 +102,7 @@ h1 {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+
 }
 
 .button-74:hover {
@@ -113,6 +114,8 @@ h1 {
   box-shadow: #422800 2px 2px 0 0;
   transform: translate(2px, 2px);
   animation-duration: 3s;
+
+
 }
 
 @media (min-width: 768px) {

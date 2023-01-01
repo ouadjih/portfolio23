@@ -45,7 +45,7 @@ export const Navbar = () => {
       
       close && screenWidth.dynamicWidth < 800  ? 
        
-        <ul className="navbar-list-phone">
+        <ul className="navbar-list-phone animate">
             <img
           className="HamburgerCl"
           onClick={() => setClose(!close)}
@@ -53,25 +53,31 @@ export const Navbar = () => {
           alt="hamburger"
          />
          <div className="list-phone">
-          <li className="navbar-list-item-phone">
+          
             <Link onClick={()=>setClose(false)} className="Itemph" to="/Projects">
+            <li className="navbar-list-item-phone animate-fade">
               Projects
+              </li>
             </Link>
-          </li>
-          <li className="navbar-list-item-phone">
+         
+         
             <Link onClick={()=>setClose(false)} className="Itemph" to="/Contact">
+            <li className="navbar-list-item-phone">
               Contact
+              </li>
             </Link>
-          </li>
-          <li onClick={()=>setClose(false)} className="navbar-list-item-phone">
+         
+         
             <Link className="Itemph" to="/Learn">
+            <li onClick={()=>setClose(false)} className="navbar-list-item-phone">
               Learn with me
+              </li>
             </Link>
-          </li>
+          
           </div>
         </ul>
       : <img
-      className="Hamburger"
+      className="Hamburger animate-out"
       onClick={() => setClose(!close)}
       src={open}
       alt="hamburger"
