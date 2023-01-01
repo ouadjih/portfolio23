@@ -54,7 +54,8 @@
   padding: 2em;
 }
 .navbar-list-item-phone:hover{
-  background-color: aliceblue;
+  background-color: #ccc;
+  color: #111;
 }
 .Itemph {
   color: var(--first);
