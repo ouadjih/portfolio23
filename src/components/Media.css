@@ -1,15 +1,22 @@
 .media{
     width: 20rem;
-    height: 50vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
-    gap:1em;   
+    align-items: center;   
 }
+.Media-title{
+    font-weight: 900;
+    font-size: 30px;
+    text-align: start;
+    text-align: center;
+    line-height: 1em;
+}
+
 .media-text{
-    font-weight: 200;
+    font-weight: 100;
     width: 35ch;
+    text-align: start;
     line-height: 2em;
 }
 .medias-contact{
@@ -20,7 +27,6 @@
     align-items: center;
     justify-content: center;
     gap: 2em;
-    padding: .5em 0;
     
 }
 
@@ -31,5 +37,5 @@
  opacity:.5;
 }
 .mediael:hover{
-        opacity:1;
+   opacity:1;
 }

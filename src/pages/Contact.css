@@ -9,8 +9,8 @@
 
 @media screen and (width < 800px) {
     .contact {
-      margin-top: 1em;
-      width: 90vw;
+        margin: .1em 0 1em 0;
+        width: 90vw;
        flex-direction: column;
        gap: 1em;
     }
