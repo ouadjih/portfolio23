@@ -45,17 +45,17 @@ export const Navbar = () => {
       
       close && screenWidth.dynamicWidth < 800  ? 
        
-        <ul className="navbar-list-phone animate">
+        <ul className="navbar-list-phone">
             <img
           className="HamburgerCl"
           onClick={() => setClose(!close)}
           src={cl}
           alt="hamburger"
          />
-         <div className="list-phone">
+         <div className="list-phone animate__animated animate__fadeInRightBig">
           
             <Link onClick={()=>setClose(false)} className="Itemph" to="/Projects">
-            <li className="navbar-list-item-phone animate-fade">
+            <li className="navbar-list-item-phone">
               Projects
               </li>
             </Link>
