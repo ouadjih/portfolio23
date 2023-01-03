@@ -7,9 +7,8 @@ export const Grid = () => {
   const [filtredItems, setFiltredItems] = useState(Projects);
   const [loading, setLoading] = useState(true);
 
+  setTimeout(() => setLoading(false), 1000);
 
-  setTimeout(()=>setLoading(false), 1000);
- 
   function onChange(e) {
     e.preventDefault();
     const value = e.target.value;
@@ -26,30 +25,26 @@ export const Grid = () => {
         onChange={onChange}
         placeholder="Type here to search projects..."
       />
-      {
-      loading?
-       
-       <Loader/>
-      :
-      <div class="cardgrid">
-        {
-        
-        filtredItems.map((p) => (
-          <a href={p.link} target="_blank" rel="noreferrer">
-          <div className="card">
-            <img 
-            className="cardimg" src={p.src} alt="card" />
-            
-            <div className="card-info">
-              <div className="card-title">{p.title}</div>
-            </div>
-          </div>
-          </a>
-        ))}
-      
-      </div>
-}
+      {loading ? (
+        <Loader />
+      ) : (
+        <div class="cardgrid">
+          {filtredItems.map((p) => (
+            <a href={p.link} target="_blank" rel="noreferrer">
+              <div className="card">
+                <img 
+                loading="lazy"
+                  className="cardimg" 
+                  src={p.src} 
+                  alt="card" />
+                <div className="card-info">
+                  <div className="card-title">{p.title}</div>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      )}
     </div>
   );
-            
 };
