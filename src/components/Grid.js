@@ -33,7 +33,6 @@ export const Grid = () => {
             <a href={p.link} target="_blank" rel="noreferrer">
               <div className="card">
                 <img 
-                loading="lazy"
                   className="cardimg" 
                   src={p.src} 
                   alt="card" />
