@@ -15,10 +15,10 @@ export const Media = () => {
       </div>
       
       <div className='medias-contact'>
-        <a  href="https://www.github.com/ouadjih"> <img src={github} alt="github/ouadjih" className='mediael' /></a>
-        <a  href="https://www.fb.com/ouadjih"> <img src={fb} alt="fb/ouadjih"  className='mediael'/></a>
-        <a  href="https://www.linkedin.com/in/ouadjih-boudraa-b8618311a"> <img src={linkedin} alt="linked/ouadjih" className='mediael'/></a>
-        <a  href="https://www.instagram.com/ouadjih/"> <img src={instagram} alt="ig/ouadjih" className='mediael'/></a>
+        <img src={github} alt="github/ouadjih" className='mediael' />
+        <img src={fb} alt="fb/ouadjih"  className='mediael'/>
+        <img src={linkedin} alt="linked/ouadjih" className='mediael'/>
+       <img src={instagram} alt="ig/ouadjih" className='mediael'/>
       </div>
     </div>
   )
