@@ -11,8 +11,8 @@
   color: var(--first);
   padding: 1em;
   position: absolute;
-  top: .8em;
-  left: 38%;
+  top: 3.3em;
+  right: .5em;
   cursor: pointer;
   width: 44px;
   height: 44px;  
