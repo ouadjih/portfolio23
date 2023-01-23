@@ -39,22 +39,14 @@
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   z-index: 99;
 }
-/*  position: absolute;
-  top: -1em;
-  right: 0em;
-  height: 100vh;
-  width: 50vw;
-  background-color: rgba(239, 239, 238, 0.89);
-  list-style: none;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-  z-index: 99;*/
 
 .navbar-list-item-phone {
   border-bottom: solid 2px var(--first);
   padding: 2em;
 }
 .navbar-list-item-phone:hover{
-  background-color: aliceblue;
+  background-color: #ccc;
+  color: #111;
 }
 .Itemph {
   color: var(--first);

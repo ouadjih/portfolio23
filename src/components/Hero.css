@@ -78,8 +78,12 @@ h1 {
     h1 {
         font-size: clamp(1rem, 1vw + 1rem, 4rem);
       }
-      .subtitle {
-        font-size: 1rem;}
+    .subtitle {
+      font-size: 1rem;}
+      .button-74 {
+        position: relative;
+        top: 6em;
+      }
  }
  
 
@@ -114,13 +118,14 @@ h1 {
   box-shadow: #422800 2px 2px 0 0;
   transform: translate(2px, 2px);
   animation-duration: 3s;
-
-
 }
+
 
 @media (min-width: 768px) {
   .button-74 {
     min-width: 120px;
     padding: 0 25px;
+    position: relative;
+    top: 2em;
   }
 }
