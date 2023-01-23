@@ -15,7 +15,7 @@ function App() {
     <div className='App'>
     
         <Layout/>
-        <img  onClick={useThemeUpdate()} className='toggle' src={darkTheme?white:dark} alt="switch"/> 
+        <img  onClick={useThemeUpdate()} className='toggle' src={darkTheme?dark:white} alt="switch"/> 
         <Routes>
           <Route index element={<Home />} />
           <Route path="Projects" element={<Projects />} />
