@@ -2,14 +2,20 @@ import { Error,Home,Projects,Contact, Layout } from './pages';
 import {Route,Routes} from 'react-router-dom'
 import './App.css';
 import { Succes } from './components/Succes';
-import { ThemeProvider } from './context/ThemeContext';
-
+import {useTheme, useThemeUpdate } from './context/ThemeContext';
+import white from './Assets/Images/white.png'
+import dark from './Assets/Images/dark.png'
 function App() {
+  const darkTheme = useTheme()
+  document.documentElement.style.setProperty('--first', darkTheme?'#AEC237':'#3B3486');
+  document.documentElement.style.setProperty('--second', darkTheme?'#0F0E0E':'#FCFDF2');
   return (
     <>
+    
     <div className='App'>
-     <ThemeProvider>
+    
         <Layout/>
+        <img  onClick={useThemeUpdate()} className='toggle' src={darkTheme?white:dark} alt="switch"/> 
         <Routes>
           <Route index element={<Home />} />
           <Route path="Projects" element={<Projects />} />
@@ -17,7 +23,6 @@ function App() {
           <Route path="Succes" element={<Succes />} />
           <Route path="*" element={<Error />} />
         </Routes>
-    </ThemeProvider>
     </div>
     </>
     

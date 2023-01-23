@@ -24,7 +24,7 @@ body {
 
 }
 a{
-  color: #AEC237;
+  color: var(--first);
   font-weight: 800;
   font-size: 16px;
 }

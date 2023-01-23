@@ -4,7 +4,7 @@ import "./Navbar.css";
 import logo from "../ouadjih.png";
 import open from "../Assets/Images/open.png";
 import cl from "../Assets/Images/close.png";
-import { useTheme, useThemeUpdate } from "../context/ThemeContext";
+
 export const Navbar = () => {
   const [screenWidth, getScreenWidth] = useState({
     dynamicWidth: window.innerWidth,
@@ -16,10 +16,6 @@ export const Navbar = () => {
       dynamicWidth: window.innerWidth,
     });
   };
-  
-  const darkTheme = useTheme();
- console.log(darkTheme)
-
   useEffect(() => {
     window.addEventListener("resize", setScreenWidth);
 
@@ -28,13 +24,12 @@ export const Navbar = () => {
     };
   }, [screenWidth]);
   return (
+   
     <nav className="navbar">
       <Link to="/">
         <img class="navbar-logo" src={logo} alt="logo" />
       </Link>
-      <button onClick={useThemeUpdate()}>
-  toggle
-</button>
+     
       {
       screenWidth.dynamicWidth > 800 ? 
         <ul className="navbar-list">
