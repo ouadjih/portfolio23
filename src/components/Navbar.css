@@ -33,7 +33,7 @@
   right: 0em;
   height: 260px;
   width: 100vw;
-  background-color: rgba(6, 6, 3, 0.89);
+  background-color: var(--second);
   
   list-style: none;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
