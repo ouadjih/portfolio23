@@ -1,5 +1,7 @@
 
 .App {
+  --second: #0F0E0E;
+  --first:  #AEC237;
   width: 100vw;
   display: flex;
   flex-direction: column;

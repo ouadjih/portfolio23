@@ -1,13 +1,13 @@
 .hero{
     --typewriterSpeed: 6s;
   --typewriterCharacters: 24;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 73vh;
 }
+
 h1 {
     font-size: clamp(1rem, 3vw + 1rem, 4rem);
     position: relative;
