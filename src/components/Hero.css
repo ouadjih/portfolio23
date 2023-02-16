@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   height: 73vh;
+  
 }
 
 h1 {
@@ -69,6 +70,12 @@ h1 {
       transform: translateY(0);
     }
   }
+  @keyframes fadeImage {
+    to {
+      opacity: 0.2;
+      transform: rotate(-40deg);
+    }
+  }
   
   @media only screen and (max-width: 590px) {
     .hero{
@@ -86,7 +93,14 @@ h1 {
       }
  }
  
-
+ .img-hero{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  transform: rotate(20deg);
+  animation: fadeImage 2s ease calc(var(--typewriterSpeed) + 1s) forwards;
+  
+ }
 
 .button-74 {
   margin-top: 15vh;
