@@ -73,7 +73,7 @@ h1 {
   @keyframes fadeImage {
     to {
       opacity: 0.2;
-      transform: rotate(-40deg);
+      transform: rotate(-50deg);
     }
   }
   
@@ -95,6 +95,7 @@ h1 {
  
  .img-hero{
   position: absolute;
+  top: 10em;
   z-index: -1;
   opacity: 0;
   transform: rotate(20deg);
@@ -142,4 +143,11 @@ h1 {
     position: relative;
     top: 2em;
   }
+  @keyframes fadeImage {
+    to {
+      opacity: 0.2;
+      transform: rotate(-20deg);
+    }
+  }
+
 }
