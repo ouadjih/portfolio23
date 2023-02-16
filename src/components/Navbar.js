@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../ouadjih.png";
 import open from "../Assets/Images/open.png";
 import cl from "../Assets/Images/close.png";
 
@@ -27,7 +26,7 @@ export const Navbar = () => {
    
     <nav className="navbar">
       <Link to="/">
-        <img class="navbar-logo" src={logo} alt="logo" />
+        <img class="navbar-logo" src="./ouadjih.png" alt="logo" />
       </Link>
      
       {
