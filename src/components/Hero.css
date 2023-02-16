@@ -94,7 +94,7 @@ h1 {
   border: 2px solid var(--first);
   border-radius: 1em;
   box-shadow: var(--first) 4px 4px 0 0;
-  color: #0F0E0E;
+  color: var(--first);
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
