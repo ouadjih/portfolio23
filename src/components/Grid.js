@@ -23,7 +23,7 @@ export const Grid = () => {
       <input
         class="search"
         onChange={onChange}
-        placeholder="Type here to search projects..."
+        placeholder="Search project..."
       />
       {loading ? (
         <Loader />
