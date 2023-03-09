@@ -13,7 +13,7 @@
 }
 .search {
   text-align: center;
-  color: #fff;
+  color: var(--first);
   opacity: 100%;
   background-color: transparent;
   border: none;
@@ -21,7 +21,18 @@
   cursor: pointer;
   margin-top: 0.5em;
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--first);
+  opacity: 1; /* Firefox */
+}
 
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--first);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--first);
+}
 .cardgrid {
   height: 70vh;
   display: flex;
