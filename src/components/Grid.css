@@ -15,7 +15,7 @@
   text-align: center;
   color: #fff;
   opacity: 100%;
-  background-color: transparent;
+  background-color: #FFF;
   border: none;
   padding: 1em;
   cursor: pointer;
@@ -28,10 +28,12 @@
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
   color: var(--first);
+   opacity: 1; /* Firefox */
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: var(--first);
+   opacity: 1; /* Firefox */
 }
 .cardgrid {
   height: 70vh;
